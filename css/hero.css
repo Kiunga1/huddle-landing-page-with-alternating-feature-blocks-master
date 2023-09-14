@@ -1,6 +1,6 @@
 .hero {
     background: linear-gradient(rgba(200, 255, 255, 0.2), rgba(200, 255, 255, 0.2)), url(../images/bg-hero-mobile.svg) no-repeat center center / cover ;
-    
+
 }
 
 .hero .illustration_img img {
@@ -18,23 +18,26 @@
 .logo img {
     height: 20px;
     margin: auto;
-   
 }
 
 .try_it_btn {
-    background-color: white;
+    background-color: #FFF;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    border-radius: 20px;
+    border-radius: 0.75rem;
     padding: 5px 25px;
-    color: rgb(0, 14, 7);
+    color: #00252E;;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h1 {
-    font-family: 'Poppins' sans-serif;
-    margin: 30px 0;
+    color: #00252E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem; 
+    margin-bottom: 20px;  
 }
 
 .headline {
@@ -44,39 +47,51 @@ h1 {
     flex-direction: column;
 }
 
+.headline_content p {
+    color: #00252E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
 .headline_content p, .get_started_btn{
     margin-bottom: 30px;
 }
+
 .get_started_btn {
-    background-color: hsl(322, 100%, 66%);
+    background: #FF52C1;
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     line-height: 33px;
-    border-radius: 30px;
-    padding: 10px 10px;
+    border-radius: 1.75rem;
     color: hsl(193, 100%, 96%);
     width: 90%;
-
+    padding: 10px;
     margin-left: 20px;
 }
 
-@media (min-width:799px) {
-    .header {
-        padding: 30px 70px;
-    }
+.get_started_btn:hover {
+    background-color: #FF9ADB;
+}
+
+@media (min-width: 850px) {
     .headline_content{
         width: 50%;
-        padding: 70px 50px;
+        text-align: left;
     }
+
     .headline {
         flex-direction: row;
         justify-content: space-between;
-        text-align: left;
     }
 
     .get_started_btn {
         width: 70%;
     }
+
     .illustration_img {
         margin-top: 0;
         height: 50hv;
