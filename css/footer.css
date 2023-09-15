@@ -1,0 +1,54 @@
+/*For build section */
+.ready_to_build {
+    margin: 20px;
+    margin-top: 100px;
+    padding: 25px 10px;
+    border-radius: 0.9375rem;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+.ready_to_build h3 {
+    color: #00252E;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    margin-bottom: 24px;    
+}
+
+.ready_to_build > .get_started_btn {
+    color: #FFF;
+    font-size: 0.625rem;
+    font-weight: 700;
+    line-height: 0.9375rem; 
+    align-self: center;
+    width: 70%;
+    filter: drop-shadow(0px 3px 7px rgba(0, 37, 46, 0.22));
+}
+
+/*For build section tablet */
+@media (min-width: 768px) {
+    .ready_to_build {
+        margin-left:  100px;
+        margin-right:  100px;
+    }
+    .ready_to_build > .get_started_btn {
+        width: 40%;
+    }
+}
+
+/*For build section desktop */
+@media (min-width: 899px) {
+    .ready_to_build {
+        margin-left:  300px;
+        margin-right:  300px;
+    }
+    .ready_to_build > .get_started_btn {
+        width: 40%;
+    }
+}
