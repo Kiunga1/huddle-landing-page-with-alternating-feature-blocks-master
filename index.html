@@ -10,13 +10,16 @@
   <link rel="stylesheet" href="./css/hero.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/build.css">
   <link rel="stylesheet" href="./css/footer.css">
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
+  <!-- Feather icons-->
+  <script src="https://unpkg.com/feather-icons"></script>
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
@@ -101,53 +104,68 @@
 
   <footer class="footer">
     <div class="footer_container">
-      <div class="footer_logo">
-        <img src="./images/logo.svg" alt="Footer logo">
-      </div>
-
-      <div class="address">
-        <div class="location-address">
-          <i data-feather="map-pin"></i>
-          <div class="test-address">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua
+      <div class="contact_info">
+        <div class="footer_logo">
+          <img src="./images/logo.svg" alt="Footer logo">
+        </div>
+  
+        <div class="addresses">
+          <div class="address location-address">
+            <i data-feather="map-pin"></i>
+            <div class="test-address">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua
+            </div>
+          </div>
+          <div class="address phone-address">
+             <i data-feather="phone"></i>
+             <div class="text-address">+1-543-123-4567</div>
+          </div>
+          <div class="address email-address">
+            <i data-feather="mail"></i>
+            <div class="text-address">
+            example@huddle.com
+            </div>
           </div>
         </div>
-        <div class="phone-address">
-           <i data-feather="phone"></i>
-           <div class="text-address">+1-543-123-4567</div>
+  
+        <div class="huddleservices">
+          <p>About Us</p>
+          <p> What We Do</p>
+          <p>FAQ</p>
         </div>
-        <div class="email-address">
-          <i data-feather="email"></i>
-          <div class="text-address">
-          example@huddle.com
-          </div>
+  
+        <div class="contact">
+          <p>Career</p>
+          <p>Blog</p>
+          <p>Contact Us</p>
         </div>
+  
+        <div class="social">
+          <ul class="sns">
+              <li><a href="#"><i data-feather="facebook" class="icon-social"></i></a></li>
+              <li><a href="#"><i data-feather="twitter" class="icon-social"></i></a></li>
+              <li><a href="#"><i data-feather="instagram" class="icon-social"></i></a></li>
+          </ul>
+  
       </div>
-
-      <div class="services">
-
+  
       </div>
+    </div>
 
+    <div class="copyright">
+      <p class="copyright_info">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Ann Kiunga</a>.
+      </p>
 
     </div>
   </footer>
   
-  About Us
-  What We Do
-  FAQ
 
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>

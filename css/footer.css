@@ -1,54 +1,82 @@
-/*For build section */
-.ready_to_build {
-    margin: 20px;
-    margin-top: 100px;
-    padding: 25px 10px;
-    border-radius: 0.9375rem;
-    background: #FFF;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+.footer {
+    background: #00252E;
+    color: #fff;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding-top: 100px;
+}
+
+.footer .footer_container {
+   display: grid;
+   gap: 20px;
+}
+
+.address {
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.social ul {
+    display: flex;
     justify-content: center;
-}   
+    gap: 40px;
+    list-style: none;
+    align-self: baseline;
+}
 
-.ready_to_build h3 {
-    color: #00252E;
-    text-align: center;
+.footer p {
+    margin-bottom: 20px ;
+} 
+
+.copyright {
+    margin-top: 20px;
+    text-align : center;
     font-family: 'Poppins';
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 1.875rem;
-    margin-bottom: 24px;    
+    font-size: 0.69563rem;
+    font-weight: 400;
 }
 
-.ready_to_build > .get_started_btn {
-    color: #FFF;
-    font-size: 0.625rem;
-    font-weight: 700;
-    line-height: 0.9375rem; 
-    align-self: center;
-    width: 70%;
-    filter: drop-shadow(0px 3px 7px rgba(0, 37, 46, 0.22));
+.footer_logo {
+    background: #fff;
+    width: 250px;
+    margin-bottom: 20px;
 }
 
-/*For build section tablet */
-@media (min-width: 768px) {
-    .ready_to_build {
-        margin-left:  100px;
-        margin-right:  100px;
+/*For desktop and tablet*/
+@media screen and (min-width: 765px){
+    .contact_info {
+       /* display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+        /*gap: 10px; 
+        align-items: center;
+        */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
     }
-    .ready_to_build > .get_started_btn {
-        width: 40%;
+    
+    .footer_container {
+        position: relative;
     }
-}
 
-/*For build section desktop */
-@media (min-width: 899px) {
-    .ready_to_build {
-        margin-left:  300px;
-        margin-right:  300px;
+    .footer_logo {
+        position: absolute;
+        top: 15%;
+        left: 7%;
     }
-    .ready_to_build > .get_started_btn {
-        width: 40%;
+
+    .addresses {
+        width: 25%;
+    }
+    
+    .copyright .copyright_info {
+        position: absolute;
+        right: 10%;
+
     }
 }
